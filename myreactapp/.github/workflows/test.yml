@@ -11,10 +11,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
-      -name: Test using Yarn after installing packges
-       uses: actions/setup-node@v1
-       with:
+      - uses: actions/checkout@v2
+      - name: Test using Yarn after installing packges
+        uses: actions/setup-node@v1
+        with:
          node-version: '14'
-      -run: yarn install 
-      -run: yarn test
+      - run: yarn install 
+      - run: yarn test
